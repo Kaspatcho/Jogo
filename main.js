@@ -1,7 +1,7 @@
 let player
 let shots = []
 let enemies = []
-let enemyCount = 7
+let enemyCount = 18
 let running = true
 let playerWin = false
 
@@ -42,11 +42,11 @@ function mousePressed(){
 }
 
 function keyPressed({key}){
-    notiFyAll(key, true)
+    notiFyAll(key.toLowerCase(), true)
 }
 
 function keyReleased({key}){
-    notiFyAll(key, false)
+    notiFyAll(key.toLowerCase(), false)
 }
 
 function hitCircles(){
